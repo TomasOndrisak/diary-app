@@ -5,9 +5,22 @@
                 <mat-label>Nadpis</mat-label>
                 <input matInput #input maxlength="18" placeholder="Krásny deň" />
             </mat-form-field>
-            <p>{{ getDayName()}} {{ DateOfWritting | date : "dd.MM.yyy" }}</p>
+            <div class="date-group">
+                <button mat-button (click)="previousDay()" >
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </button>
+                <p class="date">{{ DateOfWritting | dayName }} {{ DateOfWritting | date : "dd.MM.yyy" }}</p>
+                <button mat-button (click)="nextDay()">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </button>
+                    
+            </div>
         </div>
-        <div class="paper">
+        <div class="paper depth">
             <div class="paper-content" contenteditable="true">
                  Dnes bol krásny deň, pretože ...
             </div>

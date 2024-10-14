@@ -1,5 +1,4 @@
 html, body {
-    background-color: #495057;
     height: 100vh; }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -10,4 +9,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.depth{
+    filter: drop-shadow(0px 0px 5px black);
 }

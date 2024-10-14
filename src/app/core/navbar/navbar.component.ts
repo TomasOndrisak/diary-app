@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AccountComponent } from '../../modules/account/account.component';
 import { DiaryComponent } from '../../modules/diary/diary.component';
 import { HomeComponent } from '../../modules/home/home.component';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
