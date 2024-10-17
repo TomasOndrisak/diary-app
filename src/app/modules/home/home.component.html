@@ -2,8 +2,10 @@
     <a mat-fab routerLink="diary" class="add-new">
         <span class="material-symbols-outlined">
             edit_square
-            </span></a>
-            <div class="post-item">
-                <p>Home component</p>
-            </div>
+        </span>
+    </a>
+</div>
+<div class="post-item" *ngFor="let page of diaryPages">
+    <h2 class="post-item-header">{{ page.title }} ({{ page.date | date }})</h2>
+    <p>{{ page.content }}</p>
 </div>
