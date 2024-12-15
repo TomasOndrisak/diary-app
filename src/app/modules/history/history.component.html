@@ -1,0 +1,18 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<div class="wrapper container">
+    <div class="post-item" *ngFor="let page of diaryPages">
+      <div class="post-item-header">
+        <p class="header">{{ page.title }}</p>
+        <a (click)="FavoriteSwitch(page)" mat-mini-fab class="favorite-btn" [ngClass]="page.isFavorite ? 'is-favorite' : ''">
+          <span class="material-symbols-outlined">
+            star
+          </span>
+        </a>
+        <p>({{ page.date | date }})</p>
+      </div>
+      <div class="post-item-content">
+        <p>{{ page.content }}</p>
+      </div>
+    </div>
+  </div>

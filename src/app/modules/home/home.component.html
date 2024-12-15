@@ -4,8 +4,13 @@
             edit_square
         </span>
     </a>
-</div>
-<div class="post-item" *ngFor="let page of diaryPages">
-    <h2 class="post-item-header">{{ page.title }} ({{ page.date | date }})</h2>
-    <p>{{ page.content }}</p>
+        <div class="post-item" *ngFor="let page of diaryPages">
+            <div class="post-item-header">
+                <p class="header">{{ page.title }}</p>
+                <p>({{ page.date | date }})</p>
+            </div>
+            <div class="post-item-content">
+                <p>{{ page.content }}</p>
+            </div>
+        </div>
 </div>

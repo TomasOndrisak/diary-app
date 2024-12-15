@@ -3,6 +3,7 @@ export class DiaryPage {
       public id: number,
       public date: Date,
       public title: string,
-      public content: string
+      public content: string,
+      public isFavorite: boolean
     ) {}
   }

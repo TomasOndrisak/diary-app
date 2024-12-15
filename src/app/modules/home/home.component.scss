@@ -1,16 +1,29 @@
 .add-new{
     align-self: flex-end;
-    position: absolute;
-    padding: 30px;
+    position: fixed;
+    
 }
 
-.post-item{
-    background-color: whitesmoke;
-    width: 50%;
-    margin: 0 auto;
+.post-item {
+  background-color: #f5f5f5;
+  width: 50%;
+  margin: 0 auto 12px;
+  gap: 24px;
+  border-radius: 24px;
 }
-.post-item-header{
-    
-    padding: 12px;
-    background-color: #f1f1f1;
+
+.post-item-header {
+  text-align: center;
+  line-height: 1px;
+  padding: 8px;  
+}
+
+.post-item-content {
+  text-align: center;
+  padding: 0px 48px;
+}
+
+.header{
+font-size: 24px;
+line-height: 1;
 }
